@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "Draw_triangle.h"
 
+/*
+ * brief This func use for draw an triangle on console 
+ * param n : number of line equals height of triangle
+ * ret   none
+ */
 void Draw_triangle(int n) {
 
     /*for loop to printf two side from top to bottom*/
