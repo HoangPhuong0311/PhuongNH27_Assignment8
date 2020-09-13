@@ -7,13 +7,13 @@
  * param n : number of line equals height of triangle
  * ret   none
  */
-void Draw_triangle(int n) {
+void Draw_triangle(uint8_t n) {
 
     /*for loop to printf two side from top to bottom*/
-    for(int x=0; x < n-1; x ++)
+    for(uint8_t x = 0; x < n-1; x ++)
     {
         /*(2*n - 1) is length of bottom */
-        for(int y=1; y <= (2*n-1); y ++)
+        for(uint8_t y = 1; y <= (2*n-1); y ++)
         {
             if(y == n - x | y == n + x )
             {
@@ -24,7 +24,7 @@ void Draw_triangle(int n) {
         printf("\n");
     }
     /*for loop to printf base */
-    for(int y=1; y <= (2*n-1); y ++) {
+    for(uint8_t y=1; y <= (2*n-1); y ++) {
         printf("%c", '*');
     }
 }
